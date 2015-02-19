@@ -864,7 +864,7 @@ class nodb {
 							}
 							else if(is_string($index))
 							{
-								$index_start_stop = split("-",$index);
+								$index_start_stop = explode("-",$index);
 								$start = $index_start_stop[0];
 								$stop = $index_start_stop[1];
 								$stop++; // giving "0-2" the following loop would delete line 0,1 but not line 2
